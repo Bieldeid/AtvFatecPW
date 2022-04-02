@@ -1,0 +1,56 @@
+#topo {
+    background-color: #D0D0D0;
+    background-size: justify;
+    font-family: 'Courier New', Courier, monospace
+
+
+}
+
+#logo {
+    background-color: #D0D0D0;
+    width: 260px;
+    height: 160px;
+}
+
+#titulo {
+    text-align: center;
+    color: black;
+    font-family: 'Courier New', Courier, monospace
+}
+
+#subtitulo {
+    text-align: left;
+    color: grey;
+    font-family: 'Courier New', Courier, monospace
+}
+
+main{
+    background-color: white;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    background-color: #B20000;
+    color: white;
+}
+nav a {
+    color: white;
+}
+
+footer {
+    background-color: #D0D0D0;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-family: 'Courier New', Courier, monospace
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section {
+    text-align: center;
+}

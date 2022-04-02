@@ -8,16 +8,19 @@
     <meta name ="description" content="Instruções sobre metadados, comentários, listas e layouts em HTML">
     <meta name="keywords" content="HMTL, Comentários, Metadados, Lista não ordenada, Layout">
     <meta name="author" content="Gabriel Santos (Deid)">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
 
     <title>Atividade 2</title> <!--Titulo do Site-->
 </head>
 <body>  
     <header>
-        <a href="index.html" title="Ir para a página inicial">
-            <img src="../img/FATEC_ZONA_LESTE.png" alt="Logo da FATEC ZL em cores cinza e vermelho">
-        </a>    
+        <div id="topo">
+            <a href="index.html" title="Ir para a página inicial">
+                <img src="../img/FATEC_ZONA_LESTE.png" alt="Logo da FATEC ZL em cores cinza e vermelho" id="logo">
+            </a>    
+        </div>
         <nav>
-            <ul>
+            <ul id="links">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="comentarios.html":>Comentários</a></li>
                 <li><a href="metadados.html":>Metadados</a></li>
@@ -32,9 +35,9 @@
         </nav>
     </header>
     <main>
-        <h1>AULA DESENVOLVIMENTO WEB 1</h1>
+            <h1 id="titulo">AULA DESENVOLVIMENTO WEB 1</h1>
         <section>
-            <h2>Assunto principais</h2>
+            <h2 id="subtitulo">Assunto principais</h2>
             <ol>
                 <li>Comentários</li>
                 <li>Metadados</li>
