@@ -19,7 +19,7 @@
 }
 
 #subtitulo {
-    text-align: left;
+    text-align: center;
     color: grey;
     font-family: 'Courier New', Courier, monospace
 }
@@ -27,6 +27,7 @@
 main{
     background-color: white;
     width: 100%;
+    min-height: 600px;
 }
 
 nav {
@@ -51,6 +52,6 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-section {
+section{
     text-align: center;
 }
