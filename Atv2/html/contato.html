@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- METADADOS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="description" content="Instruções sobre metadados, comentários, listas e layouts em HTML">
+    <meta name="keywords" content="HMTL, Comentários, Metadados, Lista não ordenada, Layout">
+    <meta name="author" content="Gabriel Santos (Deid)">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <title>Atividade 2</title> <!--Titulo do Site-->
+</head>
+<body>  
+    <header>
+        <div id="topo">
+            <a href="index.html" title="Ir para a página inicial">
+                <img src="../img/FATEC_ZONA_LESTE.png" alt="Logo da FATEC ZL em cores cinza e vermelho" id="logo">
+            </a>    
+        </div>
+        <nav>
+            <ul id="links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html":>Comentários</a></li>
+                <li><a href="metadados.html":>Metadados</a></li>
+                <li><a href="listas.html">Listas</a>
+                    <ul>
+                        <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
+                        <li><a href="lista_nao_ordenada.html">Lista Não Ordenada</a></li>
+                    </ul>
+                </li>
+                <li><a href="layout.html">Layout</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="conteudo">
+        <h1>FALE CONOSCO</h1> 
+
+        <form name="contato" id="contato" method="POST">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+                <br>
+                <label for="data">Data de Nascimento: </label>
+                <input type="date" name="data" id="data" required>
+                <br>
+                <label for="cpf">CPF: </label>
+                <input type="text" name="cpf" id="cpf" placeholder="999.999.999-99" required>
+                <br>
+                <label for="telefone">Telefone: </label> 
+                <input type="tel" name="telefone" id="cpf" placeholder="(11) 94002-8922">
+                <br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="jorginho@gmail.com">
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados de Endereço</legend>
+                <label for="cep">CEP: </label>
+                <input type="text" name="cep" id="cep" placeholder="99999-999" required>
+                <br>
+                <label for="rua">Rua/Avenida: </label>
+                <input type="text" name="rua" id="rua">
+                <br>
+                <label for="numero">Número: </label>
+                <input type="number" name="numero" id="numero" required>
+                <br>
+                <label for="complemento">Complemento: </label>
+                <input type="text" name="complemento" id="complemento" placeholder="Apto, Bloco, Casa...">
+                <br>
+                <label for="Bairro">Bairro: </label>
+                <input type="text" name="bairro" id="bairro">
+                <br>
+                <label for="Cidade">Cidade: </label>
+                <input type="text" name="cidade" id="cidade">
+                <br>
+                <label for="estado">Estado: </label>
+                <input type="text" name="estado" id="estado">
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Dados da Mensagem</legend>
+                <label for="assunto">Assunto: </label>
+                <select name="assunto" id="assunto" required>
+                    <option value="" selected disabled>Selecione uma Opção</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="reclamação">Reclamação</option>
+                    <option value="sugestão">Sugestão</option>
+                </select> <br>
+                <label for="mensagem">Mensagem</label> <br>
+                <textarea name="mensagem" id="mensagem"required placeholder="Digite aqui sua mensagem"></textarea>
+            </fieldset>
+            <input type="submit" name="enviar" id="enviar" value="Enviar">
+            <input type="reset" name="limpar" id="limpar" value="Limpar">
+        </form>
+           
+    </main>
+    <footer>
+        <p>Desenvolvido por Gabriel Santos</p>
+        <p>Todos os direitos reservados &copy;.</p>
+    </footer>
+</body>
+</html>
