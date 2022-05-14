@@ -6,7 +6,7 @@
 body{
     font-size: 14px;
 }
-
+/* Barra de acessibilidade */
 #acessibilidade {
     width: 100%;
     height: auto;
@@ -58,7 +58,7 @@ body{
     color: grey;
     font-family: 'Courier New', Courier, monospace
 }
-/* inicio da aplicaçãod e estilo no menu */
+/* inicio da aplicação de estilo no menu */
 
 nav {
     width: 100%;
@@ -114,14 +114,42 @@ nav a {
     border: 1px solid #fff;
     display: block;
     width: 170px;
-}
-/* FIM MENU */
 
+}
 main{
-    background-color: white;
+   background-color: white;
     width: 100%;
     min-height: 600px;
 }
+/* FIM MENU */
+
+/* BREADCRUMB */
+.breadcrumb {
+    padding-left: 2%;
+    list-style: none;
+}
+.breadcrumb li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: #000;
+}
+
+.breadcrumb li+li:before{
+    content: "/ \00a0";
+    padding: 6px;
+    color: #000;
+}
+
+.breadcrumb li a{
+    color: #3e3e3e;
+}
+.breadcrumb li a:hover{
+    color: #000;
+}
+
+
+/* FIM BREADCRUMB */
 
 footer {
     padding-top: 1%;
@@ -188,4 +216,9 @@ input[type=reset]{
 .required:after{
     content: " *";
     color: red;
+}
+
+video {
+    width: 60%;
+    height: auto;
 }
