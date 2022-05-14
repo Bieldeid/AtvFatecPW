@@ -14,12 +14,25 @@
     <title>Atividade 2</title> <!--Titulo do Site-->
 </head>
 <body>  
-    <header>
-        <div id="topo">
+    <header id = "topo">
+        <div id="acessibilidade">
+            <ul id="acessibilidade">
+                <ul id="atalhos">
+                    <li><a href="#conteudo" accesskey="1" title="Ir para contéudo da página">Ir para o conteudo [1]</a></li>
+                    <li><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Ir para menu [2]</a></li>
+                    <li><a href="#rodape" accesskey="3" title="Ir para o rodapé">Ir para o rodapé</a></li>
+                    <li id="pgacess"><a href="acessibilidade.html">ACESSIBILIDADE</a></li>
+                    <li class="contraste"><a href="javascript:void(0);" id="contraste">CONTRASTE</a></li>
+                    <li class="contraste"><a href="javascript:void(0);" id="semcontraste">SEM CONTRASTE</a></li>
+                    <li class="fonte"><a href="javascript:void(0);" id="aumentar">A +</a></li>
+                    <li class="fonte"><a href="javascript:void(0);" id="diminuir">A -</a></li>
+                </ul>
+
+            </ul>
+        </div>
             <a href="index.html" title="Ir para a página inicial">
                 <img src="../img/FATEC_ZONA_LESTE.png" alt="Logo da FATEC ZL em cores cinza e vermelho" id="logo">
             </a>    
-        </div>
         <nav>
             <ul id="links">
                 <li><a href="index.html">Início</a></li>

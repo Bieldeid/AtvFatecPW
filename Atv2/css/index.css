@@ -3,6 +3,37 @@
     padding: 0;
 }
 
+body{
+    font-size: 14px;
+}
+
+#acessibilidade {
+    width: 100%;
+    height: auto;
+    background-color: #FFF;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+
+}
+
+#atalhos {
+    list-style: none;
+    padding-left: 2%;
+}
+
+#atalhos li {
+    display: inline;
+}
+
+#pgacess {
+    padding-left: 40%;
+}
+
+.contraste, .fonte{
+    padding-left: 2%;
+}
+
 #topo {
     background-color: #D0D0D0;
     background-size: justify;
@@ -93,17 +124,68 @@ main{
 }
 
 footer {
-    background-color: #D0D0D0;
+    padding-top: 1%;
+    background-color: #3E3E3E;
     text-align: center;
     width: 100%;
-    height: auto;
-    font-family: 'Courier New', Courier, monospace
+    height: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8; 
+    color: #FFF;
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 section{
     text-align: center;
+}
+
+form {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+label, legend {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 1em;
+}
+
+input, select{
+    width: 70%;
+    height: auto;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+fieldset{
+    border: 1px solid #b00000;
+    border-radius: 15px;
+    padding: 2%;
+}
+
+textarea{
+    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 15px;
+}
+
+input[type=submit]{
+    width: 10%;
+    height: auto;
+    margin-left: 40%;
+}
+
+input[type=reset]{
+    width: 10%;
+    height: auto;
+}
+
+.required:after{
+    content: " *";
+    color: red;
 }

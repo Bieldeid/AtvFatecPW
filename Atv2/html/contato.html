@@ -37,54 +37,55 @@
         </nav>
     </header>
     <main id="conteudo">
-        <h1>FALE CONOSCO</h1> 
+        <h1 id="titulo">FALE CONOSCO</h1> 
 
         <form name="contato" id="contato" method="POST">
             <fieldset>
                 <legend>Dados Pessoais</legend>
-                <label for="nome">Nome: </label>
+                <label for="nome">Nome: </label><br>
                 <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
                 <br>
-                <label for="data">Data de Nascimento: </label>
+                <label for="data">Data de Nascimento: </label><br>
                 <input type="date" name="data" id="data" required>
                 <br>
-                <label for="cpf">CPF: </label>
+                <label for="cpf">CPF: </label><br>
                 <input type="text" name="cpf" id="cpf" placeholder="999.999.999-99" required>
                 <br>
-                <label for="telefone">Telefone: </label> 
+                <label for="telefone">Telefone: </label> <br>
                 <input type="tel" name="telefone" id="cpf" placeholder="(11) 94002-8922">
                 <br>
-                <label for="email">Email: </label>
+                <label for="email">Email: </label><br>
                 <input type="email" name="email" id="email" placeholder="jorginho@gmail.com">
             </fieldset>
-
+            <br>
             <fieldset>
                 <legend>Dados de Endereço</legend>
-                <label for="cep">CEP: </label>
+                <label for="cep">CEP: </label><br>
                 <input type="text" name="cep" id="cep" placeholder="99999-999" required>
                 <br>
-                <label for="rua">Rua/Avenida: </label>
+                <label for="rua">Rua/Avenida: </label><br>
                 <input type="text" name="rua" id="rua">
                 <br>
-                <label for="numero">Número: </label>
+                <label for="numero">Número: </label><br>
                 <input type="number" name="numero" id="numero" required>
                 <br>
-                <label for="complemento">Complemento: </label>
+                <label for="complemento">Complemento: </label><br>
                 <input type="text" name="complemento" id="complemento" placeholder="Apto, Bloco, Casa...">
                 <br>
-                <label for="Bairro">Bairro: </label>
+                <label for="Bairro">Bairro: </label><br>
                 <input type="text" name="bairro" id="bairro">
                 <br>
-                <label for="Cidade">Cidade: </label>
+                <label for="Cidade">Cidade: </label><br>
                 <input type="text" name="cidade" id="cidade">
                 <br>
-                <label for="estado">Estado: </label>
+                <label for="estado">Estado: </label><br>
                 <input type="text" name="estado" id="estado">
                 <br>
             </fieldset>
+            <br>
             <fieldset>
                 <legend>Dados da Mensagem</legend>
-                <label for="assunto">Assunto: </label>
+                <label for="assunto">Assunto: </label><br>
                 <select name="assunto" id="assunto" required>
                     <option value="" selected disabled>Selecione uma Opção</option>
                     <option value="elogio">Elogio</option>
@@ -94,6 +95,7 @@
                 <label for="mensagem">Mensagem</label> <br>
                 <textarea name="mensagem" id="mensagem"required placeholder="Digite aqui sua mensagem"></textarea>
             </fieldset>
+            <br><br>
             <input type="submit" name="enviar" id="enviar" value="Enviar">
             <input type="reset" name="limpar" id="limpar" value="Limpar">
         </form>
