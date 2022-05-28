@@ -58,7 +58,7 @@ body{
     color: grey;
     font-family: 'Courier New', Courier, monospace
 }
-/* inicio da aplicação de estilo no menu */
+/* inicio da aplicação de estilo no links */
 
 nav {
     width: 100%;
@@ -224,16 +224,15 @@ video {
 }
 
 /* menu responsivo */
-label[for="btn_menu"]{
+label[for="bt_menu"]{
     display: none;
 }
 
 #bt_menu{
     display: none;
 }
-
-@media screen and (max-width: 500px) {
-    #menu{
+@media screen and (max-width: 500px){
+    #links{
         display: none;
     }
 
@@ -241,21 +240,21 @@ label[for="btn_menu"]{
         display: block;
         float: left;
     }
-    #bt_menu:checked ~ #menu{
+    #bt_menu:checked ~ #links{
         display: block;
     }
-
-    #menu li{
+    #links li{
         position: relative;
         float: left;
         width: 100%;
     }
 
-    #menu li ul{
+    #links li ul{
         position: static;
         width: 100%;
     }
-    #menu li ul li{
+
+    #links li ul li{
         position: relative;
         width: 100%;
         float: left;
@@ -263,7 +262,7 @@ label[for="btn_menu"]{
         border: 0;
     }
 }
-/* Fim do menu responsivo */
+/* Fim do links responsivo */
 
 /* media queries barra de acessbilidade e outros */
 @media screen and (max-width: 1440px) {
