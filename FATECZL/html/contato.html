@@ -10,6 +10,10 @@
     <meta name="author" content="Gabriel Santos (Deid)">
     <link rel="stylesheet" href="../css/index.css" type="text/css">
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
     <title>FATEC ZL | Contato</title> <!--Titulo do Site-->
 </head>
@@ -56,7 +60,7 @@
                 <input type="text" name="cpf" id="cpf" placeholder="999.999.999-99" required>
                 <br>
                 <label for="telefone">Telefone: </label> <br>
-                <input type="tel" name="telefone" id="cpf" placeholder="(11) 94002-8922">
+                <input type="tel" name="telefone" id="telefone" placeholder="(11) 94002-8922">
                 <br>
                 <label for="email">Email: </label><br>
                 <input type="email" name="email" id="email" placeholder="jorginho@gmail.com">
@@ -109,5 +113,8 @@
         <p>Desenvolvido por Gabriel Santos</p>
         <p>Todos os direitos reservados &copy;.</p>
     </footer>
-</body>
+
+    <script src="../js/mask.js"></script>
+    <script src="../js/cep.js"></script>
+    </body>
 </html>

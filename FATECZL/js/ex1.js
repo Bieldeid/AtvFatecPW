@@ -69,4 +69,19 @@ function validar(){
         cadastro.cpf.focus();
         return false;
     }
+
+    let regex = /^(?=.*?[A-Za-z0-9_])(?=.*?[^\w\s]).{6,10}$/
+
+    /*(?=.*?[A-Z]) - minimo uma letra maiscula.
+     (?=.*?[a-z]) - minimo uma letra minuscula.
+     (?=.*?[0-9]) - minimo de número.
+     (?=.*?[^\w\s]) - minimo de caractere especial.
+     .{6.10} - minimo 6, maximo 10 caracteres. */
+    
+    if(!regex.exec(senha)){
+        alert("Senha de uma letra maiuscula, uma minuscula, um numero, um caractere especial");
+        cadastro.senha.focus();
+        return false;
+        
+    }
 }
